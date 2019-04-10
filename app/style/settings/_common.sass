@@ -2,13 +2,33 @@ $mainColor: #000
 
 body
 	font-family: 'Roboto', sans-serif
-	font-size: 14px
+	font-size: 16px
 
 img
 	max-width: 100%
 
 svg
 	overflow: hidden
+
+.wave
+	position: relative
+	&:before,
+	&:after
+		content: ''
+		position: absolute
+		width: 100%
+		height: 25px
+		background-position: center center
+		background-repeat: no-repeat
+		right: 0
+		left: 0
+		z-index: 2
+	&:before
+		background-image: url('../img/line-top.png')
+		bottom: -25px
+	&:after
+		background-image: url('../img/line-bottom.png')
+		top: -25px
 
 .container
 	width: 100%
@@ -26,8 +46,10 @@ svg
 		width: 1190px
 
 .title
-	font-size: 46px
-	line-height: 1.3
+	font-size: 50px
+	line-height: 1
+	font-weight: 900
+	text-align: center
 	+r(1189)
 		font-size: 42px
 	+r(1023)
