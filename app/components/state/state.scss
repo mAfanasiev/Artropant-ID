@@ -412,12 +412,6 @@ $delay: 4s;
   }
 }
 
-.custom__height {
-  width: 100%;
-  background-color: #3b374f;
-  height: 751px;
-}
-
 @media screen and (max-width: 1189px) {
   .state {
     padding-bottom: 60px;
@@ -542,6 +536,10 @@ $delay: 4s;
 
 @media screen and (max-width: 767px) {
   .state {
+    &__icon,
+    &__item-el {
+      animation: none
+    }
     &__subtitle {
       font-size: 20px;
     }
