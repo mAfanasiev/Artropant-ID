@@ -1,7 +1,10 @@
 .joint {
-  padding-top: 94px;
-  padding-bottom: 105px;
+  padding-top: 95px;
+  padding-bottom: 107px;
   text-align: center;
+  &.wave {
+    z-index: 2;
+  }
 
   &__container {
     background-image: url('../img/joint__bg.png');
@@ -44,7 +47,7 @@
       border-radius: 0;
       background-color: transparent;
       padding: 0;
-      margin-bottom: 48px;
+      margin-bottom: 52px;
       position: relative;
     }
 
