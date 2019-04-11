@@ -41,7 +41,7 @@
 		color: #222;
 		font-size: 17px;
 	    line-height: 22px;
-	    background: repeating-linear-gradient(to right, #444 0px, #444 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px);
+	    background-image: repeating-linear-gradient(to right, #444 0px, #444 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px);
 	    background-repeat: repeat-x;
 	    background-position: 0 98%;
 	    background-size: 3px 1px;
@@ -53,3 +53,45 @@
 	    }
 	}
 }
+
+
+@media screen and (max-width: 1023px) {
+	.nav {
+		&__item {
+			padding-top: 35px;
+			&::before {
+				background-color: rgba(255, 255, 255, 0);
+			}
+		}
+		&__link {
+			color: #fff;
+			font-size: 16px;
+			line-height: 1.2;
+			background-image: repeating-linear-gradient(to right, #fff 0px, #fff 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0) 3px);
+		}
+	}
+} 
+
+@media screen and (max-width: 639px) {
+	.nav {
+		text-align: center;
+		&__item {
+			&::before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+} 
+@media screen and (max-width: 479px) {
+	.nav {
+		&__item {
+			margin-right: 0px;
+			margin-left: 0;
+			&--2 {
+				margin-right: 15px;
+				margin-left: 15px;
+			}
+		}
+	}
+} 

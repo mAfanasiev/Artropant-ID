@@ -22,6 +22,7 @@
 	transition: 0.1s;
 	&:hover {
 		background-image: linear-gradient(to right, #fb6c35 0%, #f23748 100%);
+		box-shadow: 0px 3px #da3732, 0px 3px 13px rgba(204, 91, 36, 0.5);
 	}
 	&:active {
 		box-shadow: 0px 0px #cc5b24, 0px 0px 0px rgba(204, 91, 36, 0);

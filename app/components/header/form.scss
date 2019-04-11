@@ -81,3 +81,11 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1240px) {
+	.form {
+		&::after {
+			display: none;
+		}
+	}
+} 

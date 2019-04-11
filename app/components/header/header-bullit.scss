@@ -38,3 +38,28 @@
 		transform: translateY(-50%);
 	}
 }
+
+@media screen and (max-width: 1189px) {
+	.header-bullit {
+		height: 40px;
+		width: 40px;
+		border-width: 3px;
+		&::before {
+			background-size: contain;
+			height: 90%;
+			width: 90%;
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	
+} 
+@media screen and (max-width: 767px) {
+	
+} 
+@media screen and (max-width: 639px) {
+	
+} 
+@media screen and (max-width: 479px) {
+	
+} 
