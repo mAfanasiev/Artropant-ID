@@ -29,6 +29,10 @@ svg
 	&:after
 		background-image: url('../img/line-bottom.png')
 		top: -25px
+	+r(1023)
+		&:before,
+		&:after
+			display: none
 
 .container
 	width: 100%
