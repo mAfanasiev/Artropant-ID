@@ -30,6 +30,24 @@ svg
 		background-image: url('../img/line-bottom.png')
 		top: -25px
 
+.circle
+	background-color: #3b374f
+	color: #fff
+	position: relative
+	background-image: linear-gradient(to right, #3b374f calc(50% + 100px), #eaf0f6 calc(50% + 100px), #eaf0f6 100%)
+	z-index: 0
+	&::after 
+		content: ''
+		display: block
+		position: absolute
+		background-color: #eaf0f6
+		height: 800px
+		width: 800px
+		border-radius: 50%
+		right: calc(50% - 576px)
+		top: -15px
+		z-index: -1
+
 .container
 	width: 100%
 	margin: 0 auto
