@@ -5,7 +5,10 @@
 	border-radius: 50%;
 	box-sizing: border-box;
 	border: 4px solid #ffc60d;
+	background-color: #3b374f;
 	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	&::before {
 		content: '';
 		display: block;
@@ -14,14 +17,24 @@
 		height: 50px;
 		width: 50px;
 		border-radius: 50%;
-		// border: 4px solid #ffc60d;
 		background-image:  url(../img/header__check.svg);
 		background-repeat: no-repeat;
 		background-position: 50%;
 		box-sizing: border-box;
 		background-clip: border-box;
-		left: 50%;
-		top: 50%;
+		left: 55%;
+		top: 41%;
 		transform: translateX(-50%) translateY(-50%);
+	}
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 23px;
+		background-color: rgba(255, 255, 255, 0.15);
+		top: 50%;
+		right: -24px;
+		transform: translateY(-50%);
 	}
 }

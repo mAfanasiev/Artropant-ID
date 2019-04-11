@@ -10,9 +10,12 @@ img
 svg
 	overflow: hidden
 
+br 
+	line-height: 0
+
 .wave
 	position: relative
-	z-index: 1
+	z-index: 0
 	background: #fff
 	&:before,
 	&:after
@@ -33,7 +36,7 @@ svg
 		top: -25px
 
 .circle
-	height: calc(100% + 40px)
+	height: calc(100% + 20px)
 	width: 100%
 	overflow: hidden
 	position: absolute
