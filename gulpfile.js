@@ -58,22 +58,21 @@ gulp.task('html', function() {
 		.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('style', function(){
-	return gulp.src(path.src.style)
-		.pipe(plumber())
-		.pipe(sourcemaps.init())
-		.pipe(sass())
-		.pipe(concat('main.css'))
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false 
-		}))
-		.pipe(cleanCSS({
-			level: 2
-		}))
-		.pipe(sourcemaps.write())
-		.pipe(gulp.dest(path.build.style))
-		.pipe(browserSync.reload({stream: true}));
+gulp.task('style', function(done){
+  gulp.src(path.src.style)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', function(error) {
+        // у нас ошибка
+        done(error);
+      }))
+    .pipe(concat('main.css'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(path.build.style))
+    .on('end', function() {
+        // у нас все закончилось успешно
+        done();
+      })
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('scripts', function() {
@@ -133,7 +132,7 @@ gulp.task('clean', function() {
 
 gulp.task('watch', ['clean','browser-sync', 'html', 'style', 'scripts', 'img', 'fonts'], function() {
 	gulp.watch([path.watch.htmlApp, path.watch.html], ['html']);
-	gulp.watch([path.watch.style], ['style']);
+	gulp.watch(['app/components/**/*.+(sass|scss)', 'app/style/**/*.+(sass|scss)'], ['style']);
 	gulp.watch([path.watch.img], ['img']);
 	gulp.watch([path.watch.scripts], ['scripts']);
 	gulp.watch([path.watch.fonts], ['fonts']);

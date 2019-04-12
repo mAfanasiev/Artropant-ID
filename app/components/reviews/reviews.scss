@@ -1,0 +1,135 @@
+.reviews {
+	background-color: #3b374f;
+	color: #fff;
+	text-align: center;
+	padding-top: 109px;
+	padding-bottom: 120px;
+	&__list {
+		width: 1200px;
+		margin-top: 40px;
+		margin-left: -14px;
+	}
+	.slick-track {
+		padding-top: 80px;
+		padding-bottom: 20px;
+	}
+	&__item {
+		background-color: #fff;
+		color: #000;
+		margin: 0 15px;
+		padding: 20px 34px;
+		padding-bottom: 26px;
+		padding-top: 155px;
+		text-align: center;
+		position: relative;
+		transition: 1s;
+		height: auto;
+		min-height: 546px;
+		width: 370px;
+		box-shadow: inset 0px 3px 0px #fbc002;
+		border-radius: 5px;
+	}
+	&__item.open {
+		transition: 1s;
+	}
+	&__item.slick-center {
+		transform: translateY(-40px);
+		transition: 1s;
+	}
+	&__img {
+		width: 100%;
+		max-width: 170px;
+		position: absolute;
+		left: 50%;
+		top: -30px;
+		transform: translateX(-50%);
+		img {
+			border-radius: 6px;
+		}
+	}
+	&__name {
+		font-size: 24px;
+		line-height: 1;
+		color: #222;
+		font-weight: 500;
+	}
+	&__quote {
+		font-size: 19px;
+		line-height: 24px;
+		font-style: italic;
+	}
+	&__body {
+		max-height: 316px;
+		overflow: hidden;
+		transition: 1s;
+		margin-top: 14px;
+		padding-top: 15px;
+	}
+	&__body.open {
+		max-height: 1000px;
+		transition: 1s;
+	}
+	&__text {
+		margin-top: 15px;
+		font-size: 18px;
+		line-height: 26px;
+		color: #666;
+	}
+	&__more {
+		height: 40px;
+		width: 40px;
+		background-color: #fbc002;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		bottom: -20px;
+		transform: translateX(-50%);
+		cursor: pointer;
+		transition: 0.5s;
+		&::before,
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			height: 14px;
+			width: 2px;
+			background-color: #413d54;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			transition: 0.5s;
+		}
+		&::after {
+			transform: translateX(-50%) translateY(-50%) rotate(90deg);
+		}
+		&:hover {
+			&::before,
+			&::after {
+				background-color: #fff;
+			}
+		}
+	}
+	&__more.open {
+		background-color: #807c96;
+		&:hover {
+			background-color: #aaa4cc;
+		}
+		&::before {
+			transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+			background-color: #fff;
+		}
+		&::after {
+			background-color: #fff;
+			transform: translateX(-50%) translateY(-50%) rotate(270deg);
+		}
+	}
+
+	&__footnote {
+		font-size: 18px;
+		line-height: 24px;
+		color: #dfdee5;
+		font-style: italic;
+		margin-top: 32px;
+	}
+
+}
