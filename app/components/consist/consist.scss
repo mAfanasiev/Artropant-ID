@@ -1,14 +1,16 @@
 .consist {
   position: relative;
   z-index: 0;
-  padding-top: 120px;
-  padding-bottom: 110px;
+  padding-top: 119px;
+  padding-bottom: 111px;
   background-color: #3b374f;
 
   & &__circle {
+    height: 100%;
     &-inner {
-      height: 895px;
+      height: 970px;
       background-image: none;
+      top: -16px;
     }
   }
 
@@ -19,6 +21,7 @@
   }
 
   & &__title {
+    line-height: 48px;
     text-align: left;
     color: #ffffff;
 
@@ -36,6 +39,10 @@
 
   &__prod {
     width: 500px;
+
+    &-img {
+      margin-top: 54px;
+    }
   }
 
   &__list {
@@ -47,16 +54,29 @@
     display: flex;
     align-items: flex-start;
 
+    &--1 {
+      margin-top: 15px;
+    }
+    &--2 {
+      margin-top: 37px;
+    }
+    &--3 {
+      margin-top: 50px;
+    }
+
     &-img {
       width: 270px;
       &--1 {
-        padding-right: 29px;
+        padding-right: 22px;
+        padding-top: 9px;
       }
       &--2 {
-        padding-right: 46px;
+        padding-right: 38px;
+        padding-top: 40px;
       }
       &--3 {
         padding-right: 40px;
+        padding-top: 27px;
       }
     }
 
@@ -80,11 +100,11 @@
       width: 30px;
       height: 3px;
       background-color: #fbc002;
-      margin-top: 19px;
+      margin-top: 16px;
     }
     &-text {
-      line-height: 25px;
-      margin-top: 19px;
+      line-height: 28px;
+      margin-top: 14px;
       color: #444444;
       font-size: 20px;
       font-weight: 400;
@@ -96,7 +116,7 @@
   }
 
   &__btn {
-    margin-top: 36px;
+    margin-top: 33px;
     margin-right: auto;
     margin-left: auto;
     max-width: 280px;
@@ -112,12 +132,3 @@
 
 
 
-
-
-
-
-
-.custom__height {
-  width: 100%;
-  height: 1052px;
-}
