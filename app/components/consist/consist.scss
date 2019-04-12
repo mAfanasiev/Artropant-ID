@@ -126,9 +126,7 @@
     font-size: 26px;
   }
 }
-.ever-popup.show {
-  display: none !important;
-}
+
 @include r(1189) {
   .consist {
     padding-top: 70px;

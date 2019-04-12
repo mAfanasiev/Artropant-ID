@@ -11,6 +11,7 @@ const plumber     	= require('gulp-plumber');
 const del     		= require('del');
 const runSequence 	= require('run-sequence');
 const fs 			= require('fs');
+const wait 			= require('gulp-wait');
 
 let path = {
 	src: {
@@ -61,6 +62,7 @@ gulp.task('html', function() {
 gulp.task('style', function(done){
   gulp.src(path.src.style)
     .pipe(sourcemaps.init())
+    .pipe(wait(500))
     .pipe(sass().on('error', function(error) {
         // у нас ошибка
         done(error);
