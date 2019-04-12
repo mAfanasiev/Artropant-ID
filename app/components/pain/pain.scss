@@ -2,6 +2,11 @@
   background-color: #3b374f;
   padding-top: 107px;
   padding-bottom: 123px;
+  background-image: url(../img/deer.png);
+  background-position-x: calc(50% - -23px);
+  background-position-y: 0;
+  background-size: 1713px;
+  background-repeat: no-repeat;
   
   &__title {
     color: #fff;
@@ -144,6 +149,8 @@
 
 @media screen and (max-width: 1189px) {
   .pain {
+    background-size: 1300px;
+    background-position: center bottom;
     padding-top: 70px;
     padding-bottom: 70px;
     &__item {
@@ -166,6 +173,7 @@
 
 @media screen and (max-width: 1023px) {
   .pain {
+    background-image: none;
     &__content {
       margin-top: 0;
       justify-content: space-around;

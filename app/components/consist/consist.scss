@@ -4,6 +4,10 @@
   padding-top: 119px;
   padding-bottom: 111px;
   background-color: #3b374f;
+  background-image: url(../img/deer.png);
+  background-position: calc(50% - 663px) -1px;
+  background-size: 1400px;
+  background-repeat: no-repeat;
 
   & &__circle {
     height: 100%;
@@ -13,7 +17,6 @@
       top: -16px;
     }
   }
-
 
   &__container {
     position: relative;
@@ -123,10 +126,181 @@
     font-size: 26px;
   }
 }
+.ever-popup.show {
+  display: none !important;
+}
+@include r(1189) {
+  .consist {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    &__prod {
+      width: 380px;
+    }
+    &__list {
+      width: 624px;
+    }
+    &__item {
+      margin-top: 0;
+      margin-bottom: 20px;
+      &-line {
+        margin-top: 7px;
+      }
+      &-img {
+        width: 240px;
+      }
+      &-text {
+        margin-top: 5px;
+      }
+    }
+    &__btn {
+      margin-top: 0;
+    }
+  }
+}
 
+@include r(1023) {
+  .consist {
+    background-image: none;
+    & &__circle-inner {
+      top: calc(50% - 485px);
+      left: calc(50% - 150px);
+    }
+    & &__title {
+      line-height: 1;
+    }
+    &__item {
+      align-items: center;
+      &-title {
+        font-size: 22px;
+        line-height: 1;
+      }
+      &-img {
+        padding-top: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 180px;
+        &--1 {
+          & img {
+            width: 140px;
+          }
+        }
+        &--2 {
+          & img {
+            width: 110px;
+          }
+        }
+        &--3 {
+          & img {
+            width: 110px;
+          }
+        }
+      }
+      &-foto {
+        margin-right: auto;
+      }
+      &-des {
+        width: 290px;
+      }
+      &-text {
+        font-size: 17px;
+        line-height: 1.3;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+@include r(767) {
+  .consist {
+    background-color: #eaf0f6;
+    & &__circle {
+      display: none;
+    }
 
+    & &__title {
+      color: #000;
+      text-align: center;
+      & br{
+        display: none;
+      }
+    }
+    &__prod {
+      width: 100%;
+      text-align: center;
+      &-img {
+        margin-top: 20px;
+        max-width: 350px;
+      }
+    }
+    &__content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__list {
+      margin-top: 20px;
+      width: 100%;
+    }
+    &__item {
+      &-des {
+        width: calc(100% - 180px);
+      }
+    }
+  }
+}
+@include r(639) {
+  .consist {
+    &__item {
+      &-img {
+        width: 160px;
+        padding-left: 0;
+        padding-right: 10px;
+      }
+      &-des {
+        width: calc(100% - 160px);
+      }
+      &-text {
+        font-size: 16px;
+      }
+      &-title {
+        font-size: 20px;
+      }
+    }
+  }
+}
 
-
+@include r(479) {
+  .consist {
+    &__prod-img {
+      max-width: 260px;
+    }
+    &__item {
+      &-title {
+        font-size: 18px;
+      }
+      &-des {
+        width: 100%;
+      }
+      &-img {
+        width: 110px;
+        display: none;
+        //&--1 {
+        //  & img {
+        //    width: 100px;
+        //  }
+        //}
+        //&--2 {
+        //  & img {
+        //    width: 70px;
+        //  }
+        //}
+        //&--3 {
+        //  & img {
+        //    width: 70px;
+        //  }
+        //}
+      }
+    }
+  }
+}
 
 
 

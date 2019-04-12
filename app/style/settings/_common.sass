@@ -40,7 +40,7 @@ br
 			display: none
 
 .circle
-	height: calc(100% + 20px)
+	height: calc(100%)
 	width: 100%
 	overflow: hidden
 	position: absolute
@@ -57,6 +57,9 @@ br
 		background-image: url(../img/deer2.png)
 		background-repeat: no-repeat
 		background-position: -10px 16px
+	+r(1189)
+		&__inner 
+			left: calc(50% - 192px)
 	
 	
 
