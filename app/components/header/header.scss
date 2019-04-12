@@ -73,6 +73,11 @@
 	}
 	.form {
 		margin-top: 38px;
+		&::after {
+			background-image: url(../img/form__arrow.svg);
+		right: -27px;
+		bottom: 51px;
+		}
 	}
 	&__people {
 		position: absolute;

@@ -1,0 +1,97 @@
+.ever-popup__inner {
+	padding-top: 15px!important;
+}
+.ever-popup__close {
+	top: 59px!important;
+	right: 16px!important;
+}
+.ever-popup__close:after, .ever-popup__close:before {
+	height: 3px!important;
+	background: #f2304e!important;
+	width: 30px!important;
+}
+
+.popup {
+	background-color: #3b374f;
+	background-image: url(../img/deer.png);
+	background-position: -205px -179px;
+	background-size: 1400px;
+	color: #fff;
+	padding: 40px;
+	padding-top: 52px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 65px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 832px;
+	position: relative!important;
+	.circle {
+		height: 100%;
+		top: auto;
+		bottom: 0;
+		z-index: 0;
+		border-radius: 0 10px 10px 0;
+		&__inner {
+			height: 687px;
+			left: calc(50% + 5px);
+			top: -30px;
+		}
+	}
+	&__flex {
+		display: flex;
+		position: relative;
+		z-index: 1;
+		flex-wrap: wrap;
+	}
+	&__left {
+		display: flex;
+		flex-direction: column;
+		padding-top: 56px;
+	}
+	&__prod {
+		width: 430px;
+		margin-top: auto;
+		margin-bottom: 28px;
+	}
+	.logo {
+		margin-left: 126px;
+	}
+	.form {
+		margin-right: auto;
+		margin-left: 30px;
+		padding-bottom: 19px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.ever-popup__close {
+		top: 30px!important;
+		right: 12px!important;
+	}
+	.popup {
+		padding: 30px 10px;
+		padding-bottom: 16px;
+		&__flex {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__left {
+			padding-top: 0;
+		}
+		&__prod {
+			width: 280px;
+		}
+		.circle {
+			display: none;
+		}
+		.logo {
+			display: none;
+		}
+		.form {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+}
