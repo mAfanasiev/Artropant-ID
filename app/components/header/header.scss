@@ -69,9 +69,15 @@
 		z-index: 3;
 		width: 100%;
 		max-width: 493px;
+		pointer-events: none;
 	}
 	.form {
 		margin-top: 38px;
+		&::after {
+			background-image: url(../img/form__arrow.svg);
+		right: -27px;
+		bottom: 51px;
+		}
 	}
 	&__people {
 		position: absolute;

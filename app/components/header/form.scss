@@ -30,11 +30,12 @@
 		position: absolute;
 		height: 59%;
 		width: 51px;
-		background-image: url(../img/form__arrow.svg);
 		background-repeat: no-repeat;
 		background-position: 50% 100%;
-		right: -27px;
-		bottom: 51px;
+		background-image: url(../img/form__arrow-bottom.png);
+		bottom: 109px;
+		right: -37px;
+		
 	}
 	&__title {
 		font-size: 23px;
