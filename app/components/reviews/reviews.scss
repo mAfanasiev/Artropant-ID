@@ -116,7 +116,8 @@
 		&::after {
 			transform: translateX(-50%) translateY(-50%) rotate(90deg);
 		}
-		&:hover {
+		&:hover,
+		&:focus {
 			&::before,
 			&::after {
 				background-color: #fff;
@@ -125,7 +126,8 @@
 	}
 	&__more.open {
 		background-color: #807c96;
-		&:hover {
+		&:hover,
+		&:focus; {
 			background-color: #aaa4cc;
 		}
 		&::before {
