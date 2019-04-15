@@ -46,7 +46,8 @@
 	    background-position: 0 98%;
 	    background-size: 3px 1px;
 	    transition: 0.3s;
-	    &:hover {
+	    &:hover,
+	    &:focus {
 	    	background-size: 3px 0px;
 	    	background-position: 0 100%;
 	    	transition: 0.3s;

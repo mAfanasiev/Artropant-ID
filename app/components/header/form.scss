@@ -135,9 +135,15 @@
 		border-radius: 4px;
 		background: #f1f3f6;
 		padding-left: 50px;
+		transition: 0.3s;
 		&::placeholder {
 			font-size: 16px;
 			color: #666;
+		}
+		&:hover,
+		&:focus {
+			transition: 0.3s;
+			box-shadow: inset 0px 0px 30px rgba(0,0,0,0.1);
 		}
 	}
 	&__footnote {
