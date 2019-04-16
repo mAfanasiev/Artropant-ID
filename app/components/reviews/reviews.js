@@ -9,6 +9,22 @@ $(function() {
 	    // стартовий слайд
 	    initialSlide: 1,
 	    responsive: [
+	    	{
+	            breakpoint: 1750,
+	            settings: {
+	              slidesToShow: 3,
+	              centerMode: true,
+	              initialSlide: 1
+	            } 
+	        },
+	    	{
+	            breakpoint: 1302,
+	            settings: {
+	              slidesToShow: 3,
+	              centerMode: true,
+	              initialSlide: 1
+	            } 
+	        },
 	        {
 	            breakpoint: 1024,
 	            settings: {

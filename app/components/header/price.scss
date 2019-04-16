@@ -83,12 +83,7 @@
     &--new {
       color: #fd7532;
       position: relative;
-      &::after {
-        content: '*';
-        position: absolute;
-        right: -7px;
-        top: -2px;
-      }
+      
     }
   }
 }

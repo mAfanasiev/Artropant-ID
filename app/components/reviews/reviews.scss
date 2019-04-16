@@ -116,8 +116,7 @@
 		&::after {
 			transform: translateX(-50%) translateY(-50%) rotate(90deg);
 		}
-		&:hover,
-		&:focus {
+		&:hover {
 			&::before,
 			&::after {
 				background-color: #fff;
@@ -126,8 +125,7 @@
 	}
 	&__more.open {
 		background-color: #807c96;
-		&:hover,
-		&:focus {
+		&:hover {
 			background-color: #aaa4cc;
 		}
 		&::before {
@@ -148,6 +146,14 @@
 		margin-top: 32px;
 	}
 
+}
+
+
+// фікс вилізання куска слайда
+@media screen and (min-width: 1023px) {
+	.slick-list {
+		padding: 0px 34px!important;
+	}
 }
 
 @media screen and (max-width: 1300px) {

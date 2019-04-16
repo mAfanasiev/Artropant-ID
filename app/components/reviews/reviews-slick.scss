@@ -30,8 +30,7 @@
 			width: 26px;
 			top: 50%;
 		}
-		&:hover,
-		&:focus {
+		&:hover {
 			&::before {
 				background-color: #686578;
 			}
@@ -105,8 +104,7 @@
     }
  
 
-  	button:hover::before, 
-  	button:focus::before {
+  	button:hover::before {
     	background-color: #dbdbdb;
 	}
  	&.slick-active button::before {
