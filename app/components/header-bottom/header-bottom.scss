@@ -23,6 +23,9 @@
 	.header__prod {
 		bottom: -229px;
 	}
+	.header__people {
+		bottom: -10px;
+	}
 	.form {
 		padding-bottom: 18px;
 		margin-top: 0;
@@ -48,6 +51,11 @@
 		.header__prod {
 			bottom: -140px;
 		}
+		.header__people {
+			bottom: -10px;
+			left: calc(50% - 230px);
+			max-width: 520px;
+		}
 	}
 }
 @media screen and (max-width: 1023px) and (min-width: 767px) {
@@ -58,16 +66,17 @@
 		}
 		.header__about {
 			position: relative;
+
 		}
 		.header__list {
 			position: absolute;
 			flex-direction: column;
-			bottom: -180px;
+			bottom: -155px;
 			left: 80px;
 		}
 		.header__item {
 			&:nth-of-type(n+2) {
-				margin-top: 28px;
+				margin-top: 15px;
 			}
 			b {
 				display: block;
@@ -75,6 +84,9 @@
 			br {
 				display: none;
 			}
+		}
+		.form {
+			bottom: 20px;
 		}
 	}
 }

@@ -269,9 +269,12 @@
 			flex-direction: column;
 		}
 		&__item {
-			margin-left: calc(50% - 104px);
+			margin-left: calc(50% - 146px);
 			&:nth-of-type(n+2) {
 				margin-top: 15px;
+			}
+			br {
+				display: none;
 			}
 		}
 		&__prod {

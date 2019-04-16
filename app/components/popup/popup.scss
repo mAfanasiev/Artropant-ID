@@ -2,7 +2,7 @@
 	padding-top: 15px!important;
 }
 .ever-popup__close {
-	top: 59px!important;
+	top: 40px!important;
 	right: 16px!important;
 }
 .ever-popup__close:after, .ever-popup__close:before {
@@ -42,16 +42,19 @@
 		position: relative;
 		z-index: 1;
 		flex-wrap: wrap;
+		align-items: flex-start;
 	}
 	&__left {
 		display: flex;
 		flex-direction: column;
 		padding-top: 56px;
+		justify-content: flex-start;
 	}
 	&__prod {
 		width: 430px;
 		margin-top: 60px;
-		
+		align-self: flex-start;
+		max-height: 312px;
 	}
 	.logo {
 		margin-left: 126px;
