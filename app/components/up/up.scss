@@ -78,8 +78,7 @@
 }
 
 @media screen and (max-width: 1315px){
-  .up {
-    top: auto;
-    bottom: 10px;
+  .up.active {
+    display: none;
   }
 }
