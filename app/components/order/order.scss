@@ -388,3 +388,18 @@
 	}
 
 }
+
+
+
+// remove animation for fucking IE
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.order__count {
+		&-before {
+			animation: none;
+			.st0{
+				animation: none;
+			}
+		}
+	}
+}

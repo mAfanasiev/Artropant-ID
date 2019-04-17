@@ -120,7 +120,19 @@
   
 }
 
-
+@media screen and (min-width: 2000px) {
+	.slick {
+		&-arrow {
+			&::before {
+				transform: none;
+				top: 51%
+			}
+			&::after {
+				top: 54%;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 1400px) {
 	.slick {
@@ -145,9 +157,15 @@
 	.slick {
 		&-prev {
 			left: -80px;
+			&::before {
+				left: 2px;
+			}
 		}
 		&-next {
 			right: -80px;
+			&::before {
+				right: 2px;
+			}
 		}
 	}
 }
