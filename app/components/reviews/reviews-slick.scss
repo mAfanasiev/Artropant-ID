@@ -134,6 +134,16 @@
 	}
 }
 
+@media screen and (min-width: 1300px) {
+	.slick {
+		&-next {
+			&::before {
+				right: 1px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 1400px) {
 	.slick {
 		&-arrow {
